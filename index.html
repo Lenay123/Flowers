@@ -22,7 +22,6 @@ body {
   display: flex;
   align-items: flex-end;
   min-height: 100vh;
-  margin: 20%;
   background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
@@ -71,17 +70,17 @@ body {
 }
 
 .flowers {
-  /* position: relative; */
+   margin-left: 13%;
   transform: scale(0.7);
 }
 
 .flowers1 {
-  margin-left: 50%;
+  margin-left: 34%;
   transform: scale(0.7);
 }
 
 .flowers2 {
-  margin-left: 60%;
+  margin-left: 40%;
   transform: scale(0.7);
 }
 .flower {
@@ -1254,14 +1253,25 @@ body {
       cursor: pointer;
       font-size: 16px;
     }
-
+    @keyframes changeColor {
+    0% { color: wheat; }
+    25% { color: red; }
+    50% { color: blue; }
+    75% { color: green; }
+    100% { color: yellow; }
+  }
+  
+  #greeting {
+    font-size: 60px; /* Adjust font size as needed */
+    animation: changeColor 5s infinite;
+  }
 </style>
 <body class="not-loaded">
  
     <div class="night"> <br><br><br><br><br><br><br><br><br>
         <center>
-            <h1 id="greeting" style="color: wheat; font:2rem;">HI MA. ELENA FUENTES! </h1> 
-            <p id="message" style="color: wheat;">I have something for you! Click the button below</p><br>
+            <h1 id="greeting" style="color: wheat; ">HELLO I AM ELENA</h1> 
+            <p id="message" style="color: wheat; font-size: 1.5rem;">And I have something for you! Click the button below</p><br>
             <button id="showFlowersButton">Open</button> <!-- Button to reveal the flower garden -->
 
                     </center>
